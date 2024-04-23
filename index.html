@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="PT-Br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/index.css">
+    <title>Trabalho 2</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <img id="img-header" src="./img/1b54efef3720f6ac39647fc420d4a6f9-removebg-preview.png">
+        </div>
+        <h1>Filmes </h1>
+        <button id="btn-add" type="button">Adicionar Filme</button>
+    </header>
+    <div class="container-cadastro">
+        <div class="modal">
+            <h1> Cadastro de imagens </h1>
+            <form id="img-form">
+
+                <label for="id"> id Da Imagem: </label>
+                <input type="number" id="id" required>
+
+                <label for="nomeDaImagem"> Nome Da Imagem: </label>
+                <input type="text" id="nomeDaImagem" required>
+
+                <label for="sobre"> sobre: </label>
+                <input type="text" id="sobre" required>
+
+                <label for="link"> Link da Imagem: </label>
+                <input type="text" id="link" required>
+
+                <button type="submit"> Realizar cadastro </button>
+            </form>
+        </div>
+    </div>
+
+
+
+    <div class="container-edit">
+        <div class="modal">
+            <h1> Edição de imagens </h1>
+            <form id="uimg-form">
+
+                <label for="uid"> id Da Imagem: </label>
+                <input type="number" id="uid" required>
+
+                <label for="unomeDaImagem"> Nome Da Imagem: </label>
+                <input type="text" id="unomeDaImagem" required>
+
+                <label for="usobre"> sobre: </label>
+                <input type="text" id="usobre" required>
+
+                <label for="ulink"> Link da Imagem: </label>
+                <input type="text" id="ulink" required>
+
+                <button type="submit"> Editar cadastro </button>
+            </form>
+        </div>
+    </div>
+
+
+    <h1 id="lista-img"> Lista de Imagens </h1>
+    <div id="img-listDois">
+        <ul id="img-list">
+            <!-- Aqui Vai as Imagens-->
+        </ul>
+    </div>
+
+    <footer>
+        <p>Desenvolvido por: Bruno Maciel</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
